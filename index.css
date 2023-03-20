@@ -98,3 +98,21 @@ nav > div > div aside:last-child ul li img{
 /** ---   PARTIE SITE MAIN   --- **/
 /** ############################ **/
 
+#main-flex{
+    display: flex;
+    justify-content: space-around;
+}
+#main-flex section{
+    border: 1px solid var(--fondNoirNoir);
+    padding: 1%;
+    margin: 1%;
+    box-shadow: 2px 2px 2px var(--fondNoirNoir);
+}
+#main-flex section > h2{
+    border-bottom: 1px solid var(--fondNoirNoir);
+}
+#main-flex section div img{
+    float: left;
+    display: inline;
+    margin-right: 3%;
+}
