@@ -103,7 +103,7 @@ nav > div > div aside:last-child ul li img{
     padding: 2%;
 }
 
-.nav-second-menu{
+.nav-second-menu-global{
     display: none;
     justify-content: space-around;
     align-items: center;
@@ -116,9 +116,8 @@ nav > div > div aside:last-child ul li img{
 .nav-second-menu{
     display: none;
 }
-.nav-principale:hover .nav-second-menu{
-    display: flex;
-    align-items: flex-start;
+.nav-principale:hover .nav-second-menu-global{
+    display: block;
     position: absolute;
     background-color: rgba(35, 33, 33, 0.95);
     width: 100%;
@@ -127,16 +126,20 @@ nav > div > div aside:last-child ul li img{
     border: 1px solid var(--ecritureBleu);
     cursor: pointer;
 }
+.nav-second-menu-leger{
+    display: flex;
+    align-items: flex-start;
+}
 .nav-principale:hover > a{
     color: var(--ecritureBleu);
     transition: 1s;
     text-decoration: underline;
 }
-.nav-second-menu > aside{
+.nav-second-menu-leger > aside{
     width: 50%;
     padding: 5%;
 }
-.nav-second-menu > aside h4{
+.nav-second-menu-leger > aside h4{
     color: var(--ecritureGris);
 }
 
