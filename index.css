@@ -34,8 +34,7 @@ nav > div:last-child{
 }
 nav > div > div:last-child{
     display: flex;
-    padding: 1% 5%;
-    width: 50%;
+    width: 80%;
 }
 nav > div > div:first-child{
     display: flex;
@@ -47,6 +46,7 @@ nav > div > div:last-child a{
     font-size: 1.2em;
     text-decoration: none;
     margin-right:2%;
+    display: block;
 }
 nav > div > div > aside:first-child{
     width: 30%;
@@ -112,6 +112,9 @@ nav > div > div aside:last-child ul li img{
 .nav-principale{
     position: relative;
     width: 100%;
+    padding-left: 5%;
+    height: 40px;
+    padding-top:1%;
 }
 .nav-second-menu{
     display: none;
@@ -134,12 +137,17 @@ nav > div > div aside:last-child ul li img{
     color: var(--ecritureBleu);
     transition: 1s;
     text-decoration: underline;
+    display: inline-block;
+    height: 40px;
 }
 .nav-second-menu-leger > aside{
-    width: 50%;
-    padding: 5%;
+    width: 100%;
+    padding: 3%;
 }
 .nav-second-menu-leger > aside h4{
+    color: var(--ecritureGris);
+}
+.nav-second-menu-global > p {
     color: var(--ecritureGris);
 }
 
