@@ -156,7 +156,7 @@ nav > div > div aside:last-child ul li img{
         display: none;
     }
     nav > div > div:last-child{
-        width: 100%;
+        width: 98%;
     }
     nav > div > div:last-child a{
         font-size: smaller;
@@ -165,6 +165,16 @@ nav > div > div aside:last-child ul li img{
     }
     #fil-ariane p{
         font-size: smaller;
+    }
+    .nav-principale:hover .nav-second-menu-global{
+        width: auto;
+        text-align: center;
+    }
+    .nav-principale{
+        padding-left: 0;
+    }
+    .nav-second-menu-leger{
+        flex-direction: column;
     }
 }
 
