@@ -151,6 +151,23 @@ nav > div > div aside:last-child ul li img{
     color: var(--ecritureGris);
 }
 
+@media screen and (max-width: 667px){
+    nav > div > div aside:last-child ul li a:first-child{
+        display: none;
+    }
+    nav > div > div:last-child{
+        width: 100%;
+    }
+    nav > div > div:last-child a{
+        font-size: smaller;
+        margin: 0;
+        display: inline-block;
+    }
+    #fil-ariane p{
+        font-size: smaller;
+    }
+}
+
 
 
 /** ############################ **/
@@ -175,6 +192,13 @@ nav > div > div aside:last-child ul li img{
     float: left;
     display: inline;
     margin-right: 3%;
+}
+
+@media screen and (max-width: 667px){
+    #main-flex{
+        flex-direction: column;
+        height: auto;
+    }
 }
 
 /** ############################ **/
@@ -248,4 +272,20 @@ footer > div:last-child article{
 
 footer > div > div > aside{
     flex-direction: row-reverse;
+}
+@media screen and (max-width: 667px){
+    footer > div:first-child aside div{
+        display: none;
+    }
+    footer > div:first-child aside img{
+        width: 50%;
+    }
+    footer > div:last-child{
+        flex-direction: column;
+        padding: 0;
+    }
+    footer > div:last-child article{
+        width: 100%;
+        text-align: center;
+    }
 }
