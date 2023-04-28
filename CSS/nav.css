@@ -1,24 +1,4 @@
 /** ############################ **/
-/** ---  PARTIE SITE GLOBALE --- **/
-/** ############################ **/
-
-body{
-    margin: 0%;
-}
-:root{
-    --fondNoir : #14151d;
-    --fondNoirNoir: #1A1A1A;
-    --ecritureBlanche : #F5F5F5;
-    --ecritureBleu : #00A8FF;
-    --ecritureGris : #A9A9A9;
-
-    --footer-padding: 5%;
-}
-h5{
-    font-size: 1.1em;
-}
-
-/** ############################ **/
 /** ---  PARTIE SITE NAVBAR  --- **/
 /** ############################ **/
 nav{
@@ -111,8 +91,8 @@ nav > div > div aside:last-child ul li img{
 }
 .nav-principale{
     position: relative;
-    width: 100%;
-    padding-left: 5%;
+    width: 40%;
+    padding-left: 20px;
     height: 40px;
     padding-top:1%;
 }
@@ -121,7 +101,7 @@ nav > div > div aside:last-child ul li img{
 }
 .nav-principale:hover .nav-second-menu-global{
     display: block;
-    position: absolute;
+    position: relative;
     background-color: rgba(35, 33, 33, 0.95);
     width: 100%;
     z-index: 1;
@@ -175,127 +155,5 @@ nav > div > div aside:last-child ul li img{
     }
     .nav-second-menu-leger{
         flex-direction: column;
-    }
-}
-
-
-
-/** ############################ **/
-/** ---   PARTIE SITE MAIN   --- **/
-/** ############################ **/
-
-#main-flex{
-    display: flex;
-    justify-content: space-around;
-    height: 50vh;
-}
-#main-flex section{
-    border: 1px solid var(--fondNoirNoir);
-    padding: 1%;
-    margin: 1%;
-    box-shadow: 2px 2px 2px var(--fondNoirNoir);
-}
-#main-flex section > h2{
-    border-bottom: 1px solid var(--fondNoirNoir);
-}
-#main-flex section div img{
-    float: left;
-    display: inline;
-    margin-right: 3%;
-}
-
-@media screen and (max-width: 667px){
-    #main-flex{
-        flex-direction: column;
-        height: auto;
-    }
-}
-
-/** ############################ **/
-/** ---   FOOTER QUI FOOT    --- **/
-/** ############################ **/
-
-footer{
-    background-color: var(--fondNoirNoir);
-    color: var(--ecritureBlanche);
-    border-top: 1px solid var(--fondNoirNoir);
-}
-footer > div:first-child{
-    display: flex;
-    justify-content: space-between;
-    padding-right: var(--footer-padding);
-}
-footer > div:first-child > div:first-child{
-    display: flex;
-}
-footer > div:first-child > div:last-child{
-    display: flex;
-}
-footer > div:first-child > div aside{
-    float: left;
-    display: flex;
-}
-footer > div:first-child aside img{
-    object-fit: contain; /** permet de garder les proportions de l'image **/
-    width: 20%;
-    aspect-ratio: 3/2;
-}
-footer > div:first-child aside div{
-    float: left;
-    margin-left: 2%;
-    align-self: center;
-}
-
-footer > div:last-child{
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--fondNoir);
-    clear: both;
-    padding-left: var(--footer-padding);
-    padding-right: var(--footer-padding);
-}
-footer > div:last-child article ul{
-    list-style: none;
-    padding: 0;
-}
-footer > div:last-child article ul li a{
-    text-decoration: none;
-    color: var(--ecritureBlanche);
-    transition: 1s;
-}
-#droite{
-    float: right;
-}
-footer > div:last-child article{
-    width: 25%;
-}
-#logo-footer{
-    width: 100%;
-    height: 100%;
-}
-#footer-copyright{
-    text-align: center;
-    padding: 1%;
-}
-
-/** INVERSION DES FLEXS POUR LE FOOER FIRST CHILD **/
-
-footer > div > div > aside{
-    flex-direction: row-reverse;
-}
-@media screen and (max-width: 667px){
-    footer > div:first-child aside div{
-        display: none;
-    }
-    footer > div:first-child aside img{
-        width: 50%;
-    }
-    footer > div:last-child{
-        flex-direction: column;
-        padding: 0;
-    }
-    footer > div:last-child article{
-        width: 100%;
-        text-align: center;
     }
 }

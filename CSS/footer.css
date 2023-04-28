@@ -1,0 +1,89 @@
+
+/** ############################ **/
+/** ---   FOOTER QUI FOOT    --- **/
+/** ############################ **/
+
+footer{
+    background-color: var(--fondNoirNoir);
+    color: var(--ecritureBlanche);
+    border-top: 1px solid var(--fondNoirNoir);
+}
+footer > div:first-child{
+    display: flex;
+    justify-content: space-between;
+    padding-right: var(--footer-padding);
+}
+footer > div:first-child > div:first-child{
+    display: flex;
+}
+footer > div:first-child > div:last-child{
+    display: flex;
+}
+footer > div:first-child > div aside{
+    float: left;
+    display: flex;
+}
+footer > div:first-child aside img{
+    object-fit: contain; /** permet de garder les proportions de l'image **/
+    width: 20%;
+    aspect-ratio: 3/2;
+}
+footer > div:first-child aside div{
+    float: left;
+    margin-left: 5px;
+    align-self: center;
+}
+
+footer > div:last-child{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fondNoir);
+    clear: both;
+    padding-left: var(--footer-padding);
+    padding-right: var(--footer-padding);
+}
+footer > div:last-child article ul{
+    list-style: none;
+    padding: 0;
+}
+footer > div:last-child article ul li a{
+    text-decoration: none;
+    color: var(--ecritureBlanche);
+    transition: 1s;
+}
+#droite{
+    float: right;
+}
+footer > div:last-child article{
+    width: 25%;
+}
+#logo-footer{
+    width: 100%;
+    height: 100%;
+}
+#footer-copyright{
+    text-align: center;
+    padding: 1%;
+}
+
+/** INVERSION DES FLEXS POUR LE FOOER FIRST CHILD **/
+
+footer > div > div > aside{
+    flex-direction: row-reverse;
+}
+@media screen and (max-width: 667px){
+    footer > div:first-child aside div{
+        display: none;
+    }
+    footer > div:first-child aside img{
+        width: 50%;
+    }
+    footer > div:last-child{
+        flex-direction: column;
+        padding: 0;
+    }
+    footer > div:last-child article{
+        width: 100%;
+        text-align: center;
+    }
+}
